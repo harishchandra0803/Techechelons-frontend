@@ -53,11 +53,11 @@ function ProjectForm() {
             let response;
             if (id) {
                 // If editing a project
-                response = await axios.put(`https://techechelons-backend.onrender.com`, projectData);
+                response = await axios.put(`https://techechelons-backend.onrender.com/api/projects`, projectData);
                 console.log("Project Updated:", response.data);
             } else {
                 // If adding a new project
-                response = await axios.post("https://techechelons-backend.onrender.com", projectData);
+                response = await axios.post("https://techechelons-backend.onrender.com/api/projects", projectData);
                 console.log("Project Added:", response.data);
             }
     
