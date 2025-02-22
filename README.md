@@ -22,13 +22,13 @@ frontend/ │-- public/ # Static files │-- src/ │ │-- components/ # UI com
 
 ## **🛠️ Tech Stack**
 - **Frontend:** React.js, Axios, Bootstrap  
-- **Backend:** Node.js, Express.js, MongoDB (Hosted on Render)  
+- **Backend:** Node.js, Express.js, MongoDB (Hosted on Render) 
 
 ---
 
 ## **🚀 Live Demo**  
-🔗 **Frontend URL:** https://techechelons-frontend.onrender.com/  
-🔗 **Backend API:**  https://techechelons-backend.onrender.com
+** https://techechelons-frontend.onrender.com/  
+
 
 ---
 
