@@ -10,7 +10,7 @@ function ProjectList() {
 
     // Fetch projects from API
     useEffect(() => {
-        axios.get("http://localhost:5000/api/projects")
+        axios.get("https://techechelons-backend.onrender.com/api/projects")
             .then(res => setProjects(res.data))
             .catch(err => console.error("Error fetching projects:", err));
     }, []);
@@ -19,7 +19,7 @@ function ProjectList() {
     const deleteProject = async (id) => {
         if (window.confirm("Are you sure you want to delete this project?")) {
             try {
-                await axios.delete(`http://localhost:5000/api/projects/${id}`);
+                await axios.delete(`https://techechelons-backend.onrender.com/api/projects/${id}`);
                 setProjects(projects.filter(p => p._id !== id));
             } catch (error) {
                 console.error("Error deleting project:", error);
